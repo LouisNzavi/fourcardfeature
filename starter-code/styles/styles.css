@@ -1,0 +1,162 @@
+body {
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: hsl(0, 0%, 98%);
+  padding: 85px 32px;
+}
+
+/* MOBILE FIRST */
+
+.page-header {
+  margin-block-end: 5em;
+}
+
+@media (min-width: 960px) {
+  .page-header {
+    margin-block-end: 4.33em;
+  }
+}
+
+.page-title,
+.page-subtitle {
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.17px;
+  color: hsl(234, 12%, 34%);
+  margin-block-end: 0;
+}
+
+.page-subtitle {
+  font-weight: 600;
+  margin-block-end: 13px;
+}
+
+.flavour-text {
+  line-height: 25px;
+  letter-spacing: 0.167px;
+  color: hsl(234, 12%, 34%, 0.5);
+}
+
+/* DESKTOP SCREEN */
+@media (min-width: 960px) {
+  .page-title,
+  .page-subtitle {
+    font-size: 3.6rem;
+    letter-spacing: 0.25px;
+    /* margin block end 2px */
+  }
+
+  .page-subtitle {
+    margin-block-end: 0.36em;
+  }
+
+  .flavour-text {
+    line-height: 1.66;
+    max-inline-size: 37.5%; /*max-width with logical property*/
+    margin: auto;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    background-color: hsl(0, 0%, 98%);
+    /* z-index: 600; */
+  }
+}
+
+/* CARD SECTION */
+
+.flavour-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+
+.feature-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+
+.card {
+  /* margin-block-end: 25px; */
+  /* outline: 1px solid orange; */
+  text-align: inline-start;
+  font-size: 1.3rem;
+  border-block-start: 4px solid transparent;
+  padding: calc(2em - 4px) 2em 4px;
+  text-align: left;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0px 15px 30px -11px hsl(229, 6%, 66%);
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: hsl(0, 0%, 98%);
+  z-index: 2000;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: hsl(234, 12%, 34%, 0.5);
+}
+
+.card-text {
+  font-size: 1.3rem;
+  line-height: 1.77;
+  letter-spacing: 0.09px;
+  color: hsl(234, 12%, 34%, 0.5);
+}
+
+.icon-holder {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card.supervisor {
+  border-block-start-color: hsl(180, 62%, 55%);
+}
+
+.card.team-builder {
+  border-block-start-color: hsl(0, 78%, 62%);
+}
+
+.card.karma {
+  border-block-start-color: hsl(34, 97%, 64%);
+}
+
+.card.calculator {
+  border-block-start-color: hsl(212, 86%, 64%);
+}
+
+/* .wrapper {
+    max-width: 1110-px;
+    margin: auto;
+}
+
+.flex-container {
+    outline: 1px solid orange;
+}
+
+.col {
+    outline: 1px solid blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.card {
+    outline: 1px solid red;
+    text-align: left;
+    padding: 32px;
+    margin-bottom: 30px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+} */
